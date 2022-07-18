@@ -66,6 +66,15 @@ h2 {
     font-weight: 300;
 }
 
+.about-main {
+    height: 100%    ;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto2;
+}
+
 .main-section {
     width: 100%;
     display: flex;
@@ -139,7 +148,7 @@ h2 {
 .work:hover,
 .work > * :hover {
     opacity: 100%;
-    border-radius: 0rem;
+
 }
 
 .work-text {
@@ -164,7 +173,8 @@ h2 {
     max-width: 55rem;
     border-radius: 1.5rem;
     padding: 0 1.5rem;
-    overflow: hidden;
+    margin: 0;
+    /* overflow: hidden; */
 }
 
 .about-text {
@@ -258,13 +268,22 @@ a, a:hover, a:active, a:link {
 }
 
 @media(max-width: 1199px) {
+    body {
+        padding: 0 2rem;
+        overflow: hidden;
+    }
 
     #logo {
-        width: 15rem;
+        width: 7    rem;
+    }
+
+    #phone {
+        margin-top: 5rem;
+        width: clamp(20rem, 60%, 50rem);
     }
 
     .nav-link {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .header{
@@ -289,5 +308,15 @@ a, a:hover, a:active, a:link {
     }
     #phone {
         width: clamp(15rem, 70%, 50rem);
+    }
+    main {
+        width: 100%;
+    }
+    .main-right {
+        width: fit-content;
+        flex: 1;
+    }
+    .main-left {
+        flex: 1;
     }
 }
