@@ -141,14 +141,14 @@ h2 {
     width: 100%;
     border-radius: 1.5rem;
     opacity: 70%;
-    transition: 0.5s;
+    transition: all 0.5s;
     object-fit: contain;
 }
 
 .work:hover,
 .work > * :hover {
     opacity: 100%;
-
+    border-radius: 0;
 }
 
 .work-text {
@@ -307,7 +307,7 @@ a, a:hover, a:active, a:link {
         font-size: 1rem;
     }
     #phone {
-        width: clamp(15rem, 70%, 50rem);
+        width: clamp(15rem, 55%, 50rem);
     }
     main {
         width: 100%;
