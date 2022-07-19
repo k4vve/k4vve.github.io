@@ -1,337 +1,363 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
 
-html, body {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    scroll-behavior: smooth;
-    /* font-size: 1vw; */
-}
+    html, body {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+        /* font-size: 1vw; */
+    }
 
-body {
-    background-color: #202020;
-    padding: 0 5rem;
-    font-family: "Poppins";
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-main {
-    height: 100vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    font-weight: 400;
-    font-size: 3.2rem;
-    margin: 0;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin: 0;
-}
-
-.header {
-    margin: 1rem 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5rem;
-}
-
-#logo {
-    width: 8rem;
-}
-
-.nav {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.about-main {
-    height: 100%    ;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto2;
-}
-
-.main-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.main-left {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-}
-
-#welcome {
-    margin-top: 8rem;
-}
-
-#showme-btn {
-    text-decoration: none;
-    color: white;
-    border: solid 0.15rem white;
-    border-radius: 1.5rem;
-    width: fit-content;
-    padding: 0.3rem 0.8rem;
-    font-size: 1.7rem;
-    margin-top: 1rem;
-    transition: 0.2s;
-}
-
-#showme-btn:hover {
-    color: #202020;
-    background: white;
-}
-
-.main-right {
-    flex: 1;
-}
-
-#phone {
-    width: clamp(26rem, 70%, 50rem);
-    overflow: hidden;
-    
-    
-}
-
-#arrow {
-    width: 4rem;
-    margin-top: auto;
-    margin-bottom: 2rem;
-}
-
-#works {
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    text-align: center;
-    scroll-margin: 2rem;
-}
-
-.work,
-.work > * {
-    width: 100%;
-    border-radius: 1.5rem;
-    opacity: 70%;
-    transition: all 0.5s;
-    object-fit: contain;
-}
-
-.work:hover,
-.work > * :hover {
-    opacity: 100%;
-    border-radius: 0;
-}
-
-.work-text {
-    position: relative;
-    bottom: 4rem;
-    margin: 0;
-}
-
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    font-weight: 300;
-}
-
-.about {
-    background: rgb(20, 20, 20);
-    min-height: 1rem;
-    min-width: 1rem;
-    max-width: 55rem;
-    border-radius: 1.5rem;
-    padding: 0 1.5rem;
-    margin: 0;
-    /* overflow: hidden; */
-}
-
-.about-text {
-    font-size: 1.45rem;
-    font-weight: 300;
-}
-
-.naglowek {
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-#iphone11 {
-    width: 90%;
-    border-radius: 2rem;
-}
-
-#iphone13 {
-    padding-top: 5rem;
-}
-
-#ihponex {
-    width: 91%;
-    margin-top: 2rem;
-    border-radius: 2rem;
-}
-
-#frame5 {
-    width:96%;
-}
-
-#gp1 {
-    width: 100%;
-    border-radius: 2rem;
-}
-
-#macgp {
-    width: 100%;
-    padding-top: 3rem;
-}
-
-#gp2 {
-    width: 100%;
-    border-radius: 2rem;
-}
-#gp3 {
-    width: 100%;
-    border-radius: 2rem;
-}
-
-.socials {
-    background: rgb(20, 20, 20);
-    min-height: 1rem;
-    max-width: 70rem;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-a, a:hover, a:active, a:link {
-    text-decoration: none;
-}
-
-.social-btn {
-    background-color: #2d2d2d;
-    width: 15rem;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.1rem 1rem;
-    color: white;
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
-.social-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.social-text {
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 0.7rem;
-    font-weight: 300;
-}
-
-@media(max-width: 1199px) {
     body {
-        padding: 0 2rem;
-        overflow: hidden;
+        background-color: #202020;
+        padding: 0 5rem;
+        font-family: "Poppins";
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    main {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 3.2rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .header {
+        margin: 1rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5rem;
     }
 
     #logo {
-        width: 7    rem;
+        width: 8rem;
     }
 
-    #showme-btn {
-        visibility: hidden;
-    }
-    #arrow {
-        visibility: hidden;
-    }
-
-    #phone {
-        margin-top: 3rem;
-        width: clamp(20rem, 60%, 50rem);
+    .nav {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
     }
 
     .nav-link {
+        color: white;
+        text-decoration: none;
         font-size: 1rem;
+        font-weight: 300;
     }
 
-    .header{
+    .about-main {
+        height: 100%    ;
+        padding: 0;
+        display: flex;
         flex-direction: column;
-        gap: 2rem;
+        align-items: center;
+        width: auto2;
     }
-    .nav{
-        justify-content: center;
+
+    .main-section {
         width: 100%;
+        display: flex;
+        flex-direction: row;
     }
-    .about {
-        width: 90vh;
-    }
-    h1{
-        font-size: 1.6rem;
-    }
-    h2 {
-        font-size: 1rem;
-    }
-    #showme-btn {
-        font-size: 1rem;
-    }
-    #phone {
-        width: clamp(15rem, 55%, 50rem);
-    }
-    main {
-        width: 100%;
-        height: auto;
-    }
-    .main-right {
-        width: fit-content;
-        flex: 1;
-    }
+
     .main-left {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #welcome {
+        margin-top: 8rem;
+    }
+
+    #showme-btn {
+        text-decoration: none;
+        color: white;
+        border: solid 0.15rem white;
+        border-radius: 1.5rem;
+        width: fit-content;
+        padding: 0.3rem 0.8rem;
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        transition: 0.2s;
+    }
+
+    #showme-btn:hover {
+        color: #202020;
+        background: white;
+        border-radius: 0.5rem;
+    }
+
+    .main-right {
         flex: 1;
+    }
+
+    #phone {
+        width: clamp(26rem, 70%, 50rem);
+        overflow: hidden;
+        
+        
+    }
+
+    #arrow {
+        width: 4rem;
+        margin-top: auto;
+        margin-bottom: 2rem;
     }
 
     #works {
-        margin-top: 1rem;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
+        text-align: center;
+        scroll-margin: 2rem;
     }
-}
+
+    .work,
+    .work > * {
+        width: 100%;
+        border-radius: 1.5rem;
+        opacity: 70%;
+        transition: all 0.5s;
+        object-fit: contain;
+    }
+
+    .work:hover,
+    .work > * :hover {
+        opacity: 100%;
+        border-radius: 1rem;
+    }
+
+    .work-text {
+        position: relative;
+        bottom: 4rem;
+        margin: 0;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 50%;
+        font-weight: 300;
+    }
+
+    .about {
+        background: rgb(20, 20, 20);
+        min-height: 1rem;
+        min-width: 1rem;
+        max-width: 55rem;
+        border-radius: 1.5rem;
+        padding: 0 1.5rem;
+        margin: 0;
+        /* overflow: hidden; */
+    }
+
+    .about-text {
+        font-size: 1.45rem;
+        font-weight: 300;
+    }
+
+    .naglowek {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    #iphone11 {
+        width: 90%;
+        border-radius: 2rem;
+    }
+
+    #iphone13 {
+        padding-top: 5rem;
+    }
+
+    #ihponex {
+        width: 91%;
+        margin-top: 2rem;
+        border-radius: 2rem;
+    }
+
+    #frame5 {
+        width:96%;
+    }
+
+    #gp1 {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    #macgp {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    #gp2 {
+        width: 100%;
+        border-radius: 2rem;
+    }
+    #gp3 {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    .socials {
+        background: rgb(20, 20, 20);
+        min-height: 1rem;
+        max-width: 70rem;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    a, a:hover, a:active, a:link {
+        text-decoration: none;
+    }
+
+    .social-btn {
+        background-color: #2d2d2d;
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.1rem 1rem;
+        color: white;
+        border-radius: 1rem;
+        text-decoration: none;
+    }
+
+    .social-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .social-text {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 0.7rem;
+        font-weight: 300;
+    }
+
+    @media(max-width: 1199px) {
+        body {
+            padding: 0 2rem;
+            height: 100%;
+            margin: 0;
+        }
+
+        .about {
+            background: rgb(20, 20, 20);
+            min-height: 1rem;
+            min-width: 1rem;
+            max-width: 16rem;
+            border-radius: 1.5rem;
+            padding: 0 1.5rem;
+            margin: 0;
+        }
+        .about-text {
+            font-size: medium;
+        }
+
+        #logo {
+            width: 7rem;
+        }
+        #iphone13 {
+            width: 68%;
+        }
+
+        #showme-btn {
+            visibility: hidden;
+        }
+        #arrow {
+            visibility: hidden;
+        }
+
+        .naglowek {
+            margin-top: 2rem;
+        }
+
+        .socials {
+            justify-self: center;
+        }
+
+        #phone {
+            margin-top: 3rem;
+            width: clamp(20rem, 60%, 50rem);
+        }
+
+        .nav-link {
+            font-size: 1rem;
+        }
+
+        .header{
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .nav{
+            justify-content: center;
+            width: 100%;
+        }
+        .about {
+            width: 90vh;
+        }
+        h1{
+            font-size: 1.6rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        #showme-btn {
+            font-size: 1rem;
+        }
+        #phone {
+            width: clamp(15rem, 55%, 50rem);
+        }
+        main {
+            width: 100%;
+            height: auto;
+        }
+        .main-right {
+            width: fit-content;
+            flex: 1;
+        }
+        .main-left {
+            flex: 1;
+        }
+
+        #works {
+            margin-top: 1rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-gap: 1.5rem;
+        }
+    }
