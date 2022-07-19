@@ -291,6 +291,7 @@
 
         #logo {
             width: 7rem;
+            
         }
         #iphone13 {
             width: 68%;
@@ -331,6 +332,16 @@
         .about {
             width: 90vh;
         }
+        #gp1 {
+            border-radius: 0.7rem;
+        }
+        #gp2 {
+            border-radius: 0.7rem;
+        }
+        #gp3 {
+            border-radius: 0.7rem;
+        }
+
         h1{
             font-size: 1.6rem;
         }
@@ -343,6 +354,12 @@
         #phone {
             width: clamp(15rem, 55%, 50rem);
         }
+        #iphone11{
+            border-radius: 0.7rem;
+        }
+        #ihponex {
+            border-radius: 0.7rem;
+        }
         main {
             width: 100%;
             height: auto;
@@ -353,6 +370,9 @@
         }
         .main-left {
             flex: 1;
+        }
+        #frame5 {
+            margin-top: 1.4rem;
         }
 
         #works {
