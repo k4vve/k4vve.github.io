@@ -207,24 +207,39 @@
         width:96%;
     }
 
-    #gp1 {
+    #what1 {
         width: 100%;
-        border-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
     }
 
-    #macgp {
+    #logo1 {
         width: 100%;
         padding-top: 3rem;
+        border-radius: 2rem;
     }
 
-    #gp2 {
+    #logo2 {
         width: 100%;
-        border-radius: 2rem;
     }
-    #gp3 {
+    #logo3 {
         width: 100%;
-        border-radius: 2rem;
     }
+    #logo4 {
+        width: 100%;
+    }
+    #logo5 {
+        width: 100%;
+    }
+    #logo6 {
+        width: 100%;
+    }
+    #logo7 {
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
 
     .socials {
         background: rgb(20, 20, 20);
@@ -332,14 +347,37 @@
         .about {
             width: 90vh;
         }
-        #gp1 {
+        #what1 {
+            width: 100%;
+            border-top-right-radius: 0.7rem;
+            border-top-left-radius: 0.7rem;
+        }
+    
+        #logo1 {
+            width: 100%;
+            padding-top: 3rem;
             border-radius: 0.7rem;
         }
-        #gp2 {
-            border-radius: 0.7rem;
+    
+        #logo2 {
+            width: 100%;
         }
-        #gp3 {
-            border-radius: 0.7rem;
+        #logo3 {
+            width: 100%;
+        }
+        #logo4 {
+            width: 100%;
+        }
+        #logo5 {
+            width: 100%;
+        }
+        #logo6 {
+            width: 100%;
+        }
+        #logo7 {
+            width: 100%;
+            border-bottom-left-radius: 0.7rem;
+            border-bottom-right-radius: 0.7rem;
         }
 
         h1{
